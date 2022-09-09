@@ -14,7 +14,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v4
         with:
-          install: yarn install
+          start: yarn install
 
       - run: npm run report:merge
       - run: npm run report:mocha
