@@ -13,6 +13,8 @@ jobs:
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v4
+        with:
+          start: yarn start
 
       - run: npm run report:merge
       - run: npm run report:mocha
@@ -23,5 +25,4 @@ jobs:
             BRANCH: main
             FOLDER: mochawesome-report
         timeout-minutes: 10
-        with:
-          start: yarn start
+        
