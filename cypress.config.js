@@ -6,5 +6,9 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     baseUrl: "http://localhost:3000",
+    reporter: "cypress-multi-reporters",
+    reporterOptions: {
+        configFile: "reporter-config.json"
+    }
   },
 });

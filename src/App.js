@@ -25,6 +25,17 @@ function App(props) {
   const [tasks, setTasks] = useState(props.tasks);
   const [filter, setFilter] = useState('All');
 
+
+  function renderButtons(){
+   
+    
+    return (
+      <>
+            <button type="button" onclick="alert('This button does nothing.')">Click me for no resadnbkasdjbjashason!</button>
+      </>
+
+    )
+  }
   function toggleTaskCompleted(id) {
     const updatedTasks = tasks.map(task => {
       // if this task has the same ID as the edited task
@@ -101,6 +112,7 @@ function App(props) {
   return (
     <div className="todoapp stack-large">
       <Form addTask={addTask} />
+      {renderButtons()}
       <div className="filters btn-group stack-exception">
         {filterList}
       </div>
