@@ -18,7 +18,7 @@ jobs:
 
         run: npm run report:merge
       - run: npm run report:mocha
-      - name: Reports deploy :rocket:
+      - name: Reports deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
             BRANCH: main
