@@ -16,7 +16,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v4
 
-      run: npm run report:merge
+        run: npm run report:merge
       - run: npm run report:mocha
       - name: Reports deploy :rocket:
         uses: JamesIves/github-pages-deploy-action@v4.3.3
