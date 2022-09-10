@@ -1,6 +1,8 @@
-name: Cypress Tests
-
-on: [push]
+name: CI/CD Example
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   cypress-run:
@@ -13,4 +15,12 @@ jobs:
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v4
-      
+
+      run: npm run report:merge
+      - run: npm run report:mocha
+      - name: Reports deploy :rocket:
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+            BRANCH: main
+            FOLDER: mochawesome-report
+        timeout-minutes: 10      
