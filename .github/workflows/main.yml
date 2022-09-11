@@ -18,4 +18,13 @@ jobs:
         with:
           start: npm start
 
-      
+        name: report run
+        run: npm run report:merge
+        name: report merge
+      - run: npm run report:mocha
+      - name: Reports deploy
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+            BRANCH: main
+            FOLDER: mochawesome-report
+        timeout-minutes: 10      
