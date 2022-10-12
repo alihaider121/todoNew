@@ -19,7 +19,7 @@ jobs:
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_USERNAME: ali haider
-          SLACK_CHANNEL: marvel
+          SLACK_CHANNEL: general
           SLACK_TITLE: Regression Test
           SLACK_MESSAGE: "New changes :rocket:"
           SLACK_COLOR: ${{ job.status }}
