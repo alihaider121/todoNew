@@ -1,0 +1,32 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "visit google and assert search",
+    "line": 1,
+    "id": "visit-google-and-assert-search",
+    "tags": [],
+    "uri": "searchGoogle.feature",
+    "elements": [
+      {
+        "id": "visit-google-and-assert-search;lol",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Lol",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User visit the google page",
+            "result": {
+              "status": "undefined",
+              "duration": 45000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
