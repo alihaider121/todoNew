@@ -12,7 +12,5 @@ module.exports = defineConfig({
     reporterOptions: {
         configFile: "reporter-config.json"
     },
-    
-    specPattern: "**/*.{feature,features,js}"
  },
 });
